@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic HTML Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --autumn-red: #A94822;
+            --autumn-orange: #D68B52;
+            --autumn-yellow: #EDC271;
+            --autumn-brown: #7D5A50;
+            --autumn-cream: #F8F2DC;
+            --autumn-dark: #2C2418;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--autumn-yellow);
+            margin: 0;
+            padding: 20px;
+            color: var(--autumn-dark);
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--autumn-red);
+            color: var(--autumn-cream);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .sep {
+            text-align: center;
+            padding: 10px 20px; /* Reduced top and bottom padding */
+            background-color: var(--autumn-orange);
+            color: var(--autumn-cream);
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            height: 20px; /* Set an explicit height */
+            display: flex; /* Ensure alignment */
+            align-items: center;
+            justify-content: center;
+        }
+        .full-width-block {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--autumn-cream);
+            color: var(--autumn-dark);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .block {
+            display: flex;
+            background-color: var(--autumn-yellow);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .text-box {
+            flex: 1;
+            padding: 20px;
+            background-color: var(--autumn-cream);
+            color: var(--autumn-dark);
+        }
+        .graph-box {
+            flex: 1;
+            padding: 20px;
+            background-color: var(--autumn-cream);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-box p {
+            margin: 0;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: right;
+            font-size: 0.8em;
+            color: var(--autumn-brown);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Data Analysis Agent
+    </header>
+    {% for block in blocks %}
+    {% if block.is_question %}
+    <div class="full-width-block">
+        <p>{{ block.text }}</p>
+    </div>
+    {% elif block.is_full_width %}
+    <div class="full-width-block">
+        <p>{{ block.text }}</p>
+    </div>
+    {% elif block.is_sep %}
+    <div class="sep">
+        <p>{{ block.text }}</p>
+    </div>
+    {% else %}
+    <div class="block">
+        <div class="text-box">
+            <p>{{ block.text }}</p>
+        </div>
+        <div class="graph-box">
+            <img src="{{ block.png_path }}" alt="Chart">
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <footer>
+        Generated with ❤️ by LLM
+    </footer>
+</body>
+</html>

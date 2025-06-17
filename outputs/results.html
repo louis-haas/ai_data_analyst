@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic HTML Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --autumn-red: #A94822;
+            --autumn-orange: #D68B52;
+            --autumn-yellow: #EDC271;
+            --autumn-brown: #7D5A50;
+            --autumn-cream: #F8F2DC;
+            --autumn-dark: #2C2418;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--autumn-yellow);
+            margin: 0;
+            padding: 20px;
+            color: var(--autumn-dark);
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--autumn-red);
+            color: var(--autumn-cream);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .sep {
+            text-align: center;
+            padding: 10px 20px; /* Reduced top and bottom padding */
+            background-color: var(--autumn-orange);
+            color: var(--autumn-cream);
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            height: 20px; /* Set an explicit height */
+            display: flex; /* Ensure alignment */
+            align-items: center;
+            justify-content: center;
+        }
+        .full-width-block {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--autumn-cream);
+            color: var(--autumn-dark);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .block {
+            display: flex;
+            background-color: var(--autumn-yellow);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .text-box {
+            flex: 1;
+            padding: 20px;
+            background-color: var(--autumn-cream);
+            color: var(--autumn-dark);
+        }
+        .graph-box {
+            flex: 1;
+            padding: 20px;
+            background-color: var(--autumn-cream);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-box p {
+            margin: 0;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: right;
+            font-size: 0.8em;
+            color: var(--autumn-brown);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Data Analysis Agent
+    </header>
+    
+    
+    <div class="full-width-block">
+        <p>
+        <h2>Question</h2>
+        <p>Explain the main driver of the evolution of the tat_2_minutes (nb_reports_2_minutes / nb_reports)</p></p>
+    </div>
+    
+    
+    
+    <div class="full-width-block">
+        <p><h2>Key Findings</h2>
+
+<p><strong>Main Driver: Volume Mix Shift Toward Poor-Performing Category</strong></p>
+
+<p>The primary driver of TAT 2-minutes evolution is a dramatic shift in processing volume toward Belgium National ID Card, which increased from 9.5% to 57.1% of total volume (+47.6 percentage points) while having the lowest performance rate at only 26.0%.</p>
+
+<p><strong>Timeline of Performance Decline:</strong></p>
+<ul>
+<li>Major drop occurred between April 27th (79.9%) and May 4th (55.2%) - a decline of 24.7 percentage points</li>
+<li>Further deterioration to lowest point on May 11th at 45.4% (-9.8 percentage points)</li>
+<li>Pre-May stability: 78.9% to 83.3% range</li>
+<li>Post-May performance: stabilized around 47.0% to 55.7% range</li>
+<li>Total performance degradation: approximately 30 percentage points (from ~81% to ~51%)</li>
+</ul>
+
+<p><strong>Volume Mix Changes (Main Contributing Factor):</strong></p>
+<ul>
+<li>Belgium National ID Card: +47.6 percentage points (9.5% → 57.1%) - poorest performer at 26.0%</li>
+<li>France Driving Licence: -17.3 percentage points (27.4% → 10.1%) - good performer at 84.5%</li>
+<li>UK Passport: -17.0 percentage points (25.5% → 8.5%) - good performer at 82.8%</li>
+<li>US Driving Licence: -8.1 percentage points (19.0% → 10.9%) - best performer at 96.6%</li>
+</ul>
+
+<p><strong>Conclusion:</strong> The mix effect overwhelmingly dominates performance changes. The massive volume shift toward Belgium National ID Card (the poorest-performing category) combined with reduced volumes of high-performing categories is the primary cause of overall TAT 2-minutes metric deterioration, likely triggered by operational disruptions beginning in early May 2020.</p></p>
+    </div>
+    
+    
+    
+    <div class="sep">
+        <p>Detailed analytics process</p>
+    </div>
+    
+    
+    
+    <div class="block">
+        <div class="text-box">
+            <p><p><strong>Significant Changes in TAT 2-Minutes Ratio:</strong></p>
+
+<ul>
+<li><strong>Major Performance Drop in Early May 2020:</strong> The most significant change occurred between April 27th (79.9%) and May 4th (55.2%), representing a dramatic decline of 24.7 percentage points</li>
+
+<li><strong>Continued Deterioration:</strong> Performance further declined to its lowest point on May 11th at 45.4%, marking an additional 9.8 percentage point drop from the previous week</li>
+
+<li><strong>Pre-May Stability:</strong> From January through April 2020, the ratio remained relatively stable, fluctuating between 78.9% and 83.3% with typical weekly variations of 1-3 percentage points</li>
+
+<li><strong>Post-Drop Performance:</strong> After the initial collapse, the metric showed partial recovery but remained significantly below historical levels, stabilizing in the 47.0% to 55.7% range through mid-June</li>
+
+<li><strong>Overall Impact:</strong> The total performance degradation from pre-May levels (average ~81%) to post-May levels (average ~51%) represents approximately a 30 percentage point decline</li>
+</ul>
+
+<p><strong>Main Driver Analysis:</strong></p>
+<p>The evolution appears to be driven by a significant operational disruption that began in early May 2020, likely related to external factors affecting report processing capacity or methodology. The timing coincides with early COVID-19 pandemic impacts, suggesting potential staffing, system, or procedural changes that fundamentally altered the organization's ability to process reports within the 2-minute timeframe.</p></p>
+        </div>
+        <div class="graph-box">
+            <img src="plot_method2.png" alt="Chart">
+        </div>
+    </div>
+    
+    
+    
+    <div class="block">
+        <div class="text-box">
+            <p><p><strong>Performance Effect Analysis (TAT 2-Minutes Evolution by Category):</strong></p>
+<ul>
+<li><strong>Belgium National ID Card:</strong> Declined from 27.9% to 26.0% (-1.9 percentage points) with high volatility, showing the poorest overall performance</li>
+<li><strong>France Driving Licence:</strong> Declined from 85.1% to 84.5% (-0.6 percentage points) with moderate fluctuations around 84%</li>
+<li><strong>UK Driving Licence:</strong> Declined from 89.2% to 88.4% (-0.8 percentage points) but maintained consistently high performance above 84%</li>
+<li><strong>UK Passport:</strong> Declined from 84.0% to 82.8% (-1.2 percentage points) with steady performance in the 82-84% range</li>
+<li><strong>US Driving Licence:</strong> Improved from 95.5% to 96.6% (+1.1 percentage points), consistently showing the highest performance above 94%</li>
+</ul>
+
+<p><strong>Mix Effect Analysis (Volume Contribution Evolution):</strong></p>
+<ul>
+<li><strong>Belgium National ID Card:</strong> Dramatic increase from 9.5% to 57.1% volume share (+47.6 percentage points) - became the dominant category</li>
+<li><strong>France Driving Licence:</strong> Significant decrease from 27.4% to 10.1% volume share (-17.3 percentage points)</li>
+<li><strong>UK Driving Licence:</strong> Moderate decrease from 18.7% to 13.4% volume share (-5.3 percentage points)</li>
+<li><strong>UK Passport:</strong> Substantial decrease from 25.5% to 8.5% volume share (-17.0 percentage points)</li>
+<li><strong>US Driving Licence:</strong> Major decrease from 19.0% to 10.9% volume share (-8.1 percentage points)</li>
+</ul>
+
+<p><strong>Combined Impact Assessment - Main Driver of Overall TAT 2-Minutes Evolution:</strong></p>
+<ul>
+<li><strong>Primary Driver:</strong> The massive shift in volume mix toward Belgium National ID Card (from 9.5% to 57.1% of total volume) is the main driver of overall performance decline</li>
+<li><strong>Negative Impact:</strong> Belgium National ID Card has the lowest TAT performance (26.0%) but now represents the majority of processing volume, creating a significant drag on overall metrics</li>
+<li><strong>Offsetting Factor:</strong> US Driving Licence showed performance improvement (+1.1 percentage points) but its volume contribution decreased significantly (-8.1 percentage points), limiting its positive impact</li>
+<li><strong>Secondary Effects:</strong> High-performing categories (UK Driving Licence at 88.4%, France Driving Licence at 84.5%) saw their volume contributions decrease, reducing their positive influence on overall performance</li>
+<li><strong>Conclusion:</strong> The mix effect overwhelmingly dominates the performance effect - the dramatic volume shift toward the poorest-performing category (Belgium National ID Card) is the primary cause of overall TAT 2-minutes metric deterioration</li>
+</ul></p>
+        </div>
+        <div class="graph-box">
+            <img src="plot_method4_0.png" alt="Chart">
+        </div>
+    </div>
+    
+    
+    <footer>
+        Generated with ❤️ by LLM
+    </footer>
+</body>
+</html>
