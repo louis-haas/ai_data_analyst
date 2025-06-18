@@ -4,7 +4,7 @@ A fun side project exploring whether AI can actually do the job of a junior data
 
 ## Why I Built This
 
-We keep hearing about AI replacing jobs, and data analysis seems like an potential target. But when I tried the current Data Analyst tools of ChatGPT or LeChat for real data work, they're still far from doing the job. Yet, they're improving fast, so I wanted to see for myself: could an AI agent realistically replace a junior data analyst in a few years?
+We keep hearing that AI agents are going to take jobs, and data analysis seems like an potential target. But when I tried the current Data Analyst tools of ChatGPT or LeChat for real data work, they're still far from doing the job. Yet, they're improving fast, so I wanted to see for myself: could an AI agent realistically replace a junior data analyst in a few years?
 
 **My take after building this: Probably yes, but there are some real structural problems to solve first.**
 
