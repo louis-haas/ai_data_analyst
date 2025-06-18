@@ -1,0 +1,23 @@
+# Core dependencies
+pandas
+numpy
+argparse
+dotenv
+
+# LLM and API
+langchain-anthropic
+langchain-core
+
+# Database
+duckdb
+
+# Data validation
+pydantic
+
+# Visualization
+plotly
+
+# Template engine
+Jinja2
+
+
