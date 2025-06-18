@@ -67,7 +67,7 @@ I used Anthropic API for this project but feel free to use any other model provi
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/data_analyst_agent.git
+git clone https://github.com/louis-haas/data_analyst_agent.git
 cd data_analyst_agent
 ```
 
