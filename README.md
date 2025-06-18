@@ -1,4 +1,4 @@
-# AI Data Analyst Assistant
+# AI Data Analyst
 
 A fun side project exploring whether AI can actually do the job of a junior data analyst.
 
@@ -67,7 +67,7 @@ I used Anthropic API for this project but feel free to use any other model provi
 
 Clone the repository:
 ```bash
-git clone https://github.com/louis-haas/data_analyst_agent.git
+git clone https://github.com/louis-haas/ai_data_analyst.git
 cd data_analyst_agent
 ```
 

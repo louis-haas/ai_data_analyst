@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import SystemMessage, HumanMessage
-from schemas import Dataset, ListAnalyticsMethods, SQLQuery
+from schemas import Dataset, ListAnalyticsMethods
 import plotly
 from jinja2 import Environment, FileSystemLoader
 import webbrowser

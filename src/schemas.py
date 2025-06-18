@@ -19,19 +19,3 @@ class AnalyticsMethod(Enum):
 class ListAnalyticsMethods(BaseModel):
     analytics_methods: list[AnalyticsMethod]
 
-class SQLQuery(BaseModel):
-    sql_query: str  = Field(description="A SQL query that follows the guideline. Do not start with ```sql, do not finish with ```")
-
-class AnalyticsTaskOutput(BaseModel):
-    findings: str = Field(description= "The findings of the analytical task")
-
-class PythonCodeChart(BaseModel):
-    chart_python_code: str = Field(description="Some Python code to plot a chart. Do not start with ```python, do not finish with ```")
-
-class ExecSummary(BaseModel):
-    exec_summary: str = Field(description="The executive summary in HTML format. Do not start with ```html, do not finish with ```")
-
-
-
-
-
